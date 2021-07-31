@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS  if error remove 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script-->
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+    .ts{
+        text-shadow: 5px 5px 6px black;
+    }
+
+    .bs{
+        box-shadow: 10px 10px 10px black;
+    }
+</style>
+
+<body class="bg-danger">
+    <h4 id="user1Name" class="d-inline-block text-white ts" style="font-size: 30px;"></h4>
+    <span id="user1Score" class="d-inline-block text-white ts"
+        style="font-size: 30px; "></span>
+
+    <br>
+
+    <h4 id="user2Name" class="d-inline-block text-white ts" style="font-size: 30px; "></h4>
+    <span id="user2Score" class="d-inline-block text-white ts"
+        style="font-size: 30px; "></span>
+
+    <div class="container  text-center">
+        <h1 class="text-white ts">Maths Quiz</h1>
+
+        <div class="bg-white bs my-5 p-2" style="border-radius: 20px;">
+            <h2 id="question" class=""></h2>
+            <h2 id="answer" class=""></h2>
+        </div>
+
+        <div id="output" class="bg-white pb-2 bs"
+            style="border-top: 10px rgb(19, 17, 170) solid; border-radius: 10px; text-align: left;">
+        </div>
+
+        <h3 class="mt-4 text-white ts">Number : 1</h3>
+        <input type="text" class="form-control bs" name="num1" id="num1" placeholder="Number 1"
+            >
+        <h3 class="mt-4 text-white ts">Number : 2</h3>
+        <input type="text" class="form-control bs" name="num2" id="num2" placeholder="Number 2"
+            >
+
+        <button onclick="send()" style="box-shadow: 5px 5px 6px black;" class="btn btn-success mt-5">Send</button>
+    </div>
+
+
+    <script src="game.js"></script>
+</body>
+
+</html>
